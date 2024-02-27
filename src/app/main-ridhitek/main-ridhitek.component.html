@@ -1,0 +1,472 @@
+
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<app-loading-spinner *ngIf="loading"></app-loading-spinner>
+<div *ngIf="!loading">
+<div  [class.dark-mode]="themeService.isDarkMode">
+  <div [style.fontSize.px]="fontSize">
+    
+<!-- Sub Header -->
+<div>
+<div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">    
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- ***** Header Area Start ***** -->
+ <app-header></app-header>
+  <!-- ***** Header Area End ***** -->
+   
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <!-- <video autoplay muted loop id="bg-video">
+          <source src="assets/images/course-video.mp4" type="video/mp4" />
+      </video> -->
+      <img src="https://wallpapercave.com/wp/wp3147484.jpg" alt="" class="main_image">
+      
+      
+      <div class="video-overlay header-text"> 
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="caption">
+              <h6>{{"hello_everyone" | translate}}</h6>
+              <h2>{{"WELCOMETORIDHITEK" | translate}}</h2>
+              <p>{{"Ridhitek_about" | translate}}</p>
+              <div class="main-button-red">
+                  <div class="scroll-to-section"><a href="#contact">{{"about_us" | translate}}</a></div>
+              </div>
+          </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+  <section class="pt-5 pb-5 allconcaro">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-6">
+                <h3 class="mb-3">Carousel cards title </h3>
+            </div> -->
+            <div class="col-6 text-right">
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev"  style="margin-right: 5px; background-color: #010135; border-color: #010135;">
+                    <i class="fa fa-arrow-left" ></i>
+                </a>
+                <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next" style="background-color: #010135; border-color: #010135;">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-12 padrow">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="card" >
+                                        <img class="img-fluid" alt="100%x280" src="https://miro.medium.com/v2/resize:fit:1008/1*60iGlJLqr9FXAoA-XJ_xwg.jpeg">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Digital channel strategy</h3>
+                                            <p class="card-text">Every business is keen on optimizing as many marketing channels</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                              
+                               
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="https://www.perfectapps.com/wp-content/uploads/2022/10/bigstock-Business-Process-Management-Au-275262334_600x.jpg" >
+                                        <div class="card-body">
+                                            <h3 class="card-title">Business Process Management</h3>
+                                            <p class="card-text">Banking systems today rest on the foundation of information & tech</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="https://www.fujifilm.com/fbth/-/media/0,-d-,-global-assets/solutions-and-services/workflow-automation/intelligent-capture_2.jpg?h=341&w=504&la=en&hash=6C09C5325E41F613C32BD077EE9C0C5F">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Business Workflow Management</h3>
+                                            <p class="card-text">Business workflow is a sequence of tasks that performs processing of data</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- carousel end -->
+<div class="overlapped">
+<div class="wrapper-con">
+    <div class="container-con">
+      <img src="https://admin.verinite.com/wp-content/uploads/2021/06/touch.svg" alt="image">
+      <h3>Digital channel strategy</h3>
+      <p>Every business is keen on optimizing as many marketing channels</p>
+    </div>
+    <div class="container-con">
+        <img src="https://admin.verinite.com/wp-content/uploads/2021/06/management.svg" alt="image">
+      <h3>Business Process Management</h3>
+      <p>Banking systems today rest on the foundation of information & tech</p>
+    </div>
+    <div class="container-con">
+        <img src="https://admin.verinite.com/wp-content/uploads/2021/06/work-process.svg" alt="image">
+      <h3>Business Work Management</h3>
+      <p>Business workflow is a sequence of tasks that performs process of data</p>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Services</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="categories">
+            <h4>Success Stories</h4>
+            <ul>
+              <li><a href="#">DBS CREDIT CARD LAUNCH ON INTELLECT CMS -UAT </a></li>
+              <li><a href="#">Verinite Success story IDFC Bank</a></li>
+              <li><a href="#">SBC Credit Card and Switch Migration onto TSY</a></li>
+              <li><a href="#">ElectraCard to FirstVision Migration Success </a></li>
+              <li><a href="#">Success Story  Auto DE</a></li>
+            </ul>
+            <div class="main-button-red">
+              <a href="#">Click And See</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <a href="#"><img src="https://webmakers.expert/images/blog/en/what-is-it-consulting/og-general-image.jpg" alt="Consulting"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>RTEK</h6>
+                  </div>
+                  <a href="#"><h4>Consulting</h4></a>
+                  <p>Enable businesses to reimagine the future</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <a href="#"><img src="https://media.istockphoto.com/id/1304733103/photo/digital-transformation-using-information-technologies-as-cloud-computing-business-process.jpg?s=612x612&w=0&k=20&c=-ZqUt7Bxh1Squ9PT2GEKz-2ES402Dy7G0bKdV-cZAiE=" alt="Digitalization"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>RTEK</h6>
+                  </div>
+                  <a href="#"><h4>Digitalization</h4></a>
+                  <p>Morbi in libero blandit lectus
+                    cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <a href="#"><img src="https://www.openaccessgovernment.org/wp-content/uploads/2021/03/dreamstime_s_126377515.jpg" alt="Higher Education"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>RTEK</h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>Automation</h4></a>
+                  <p>Unlock business value through process automation.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <a href="#"><img src="https://static1.squarespace.com/static/5121ad1ce4b08a7615935933/5121ad1ce4b08a7615935936/5daa0a028824cb17f9418d0c/1624624279664/shutterstock_1571138281.jpg?format=1500w" alt="Student Training"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>RTEK</h6>
+                  </div>
+                  <a href="#"><h4>Independent Testing</h4></a>
+                  <p>Enable greater business value & brand assurance</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="apply-now" id="apply">
+    <div class="container">
+      <div class="row">
+        <div class="people-heading">
+            <h2 >People Bytes</h2>
+        </div>
+         
+        <div class="container-byte collage2">
+            <div class="peoplejoin-by" style="max-width:650px; ">
+                <h2>Join us for an extraordinary life at  Ridhitek</h2>
+               </div>
+            <div class="grid-container-byte">
+              <div class="item-byte item-byte1">
+                <img src="https://as2.ftcdn.net/v2/jpg/03/38/13/73/1000_F_338137310_f3fmSl2cl5RQzezzsQDZtaif1SOLvuDR.jpg" alt="image" class="imgebyte ">
+               
+                
+              </div>
+              <div class="item-byte item-byte2">
+                <img src="https://ia.acs.org.au/content/dam/ia/article/images/2022/r%20u%20ok%20younger%20worker.jpg" alt="image" class="imgebyte">
+              </div>
+              <div class="item-byte item-byte3">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2177147503/display_1500/stock-photo-smiling-young-asian-business-woman-leader-entrepreneur-professional-manager-holding-digital-tablet-2177147503.jpg" alt="image" class="imgebyte">
+              </div>
+              <div class="item-byte item-byte4">
+                <img src="https://img.freepik.com/free-photo/beautiful-young-smiling-asian-woman-working-laptop-desk-living-room-home_7861-1378.jpg?size=626&ext=jpg&ga=GA1.1.1518270500.1698537600&semt=ais" alt="image" class="imgebyte">
+              </div>
+              <div class="item-byte item-byte5">
+                <img src="https://img.freepik.com/premium-photo/laptop-portrait-business-woman-working-her-desk-office-planning-digital-agency-hr-management-human-resources-professional-employee-happy-face-person-her-computer-technology_590464-190746.jpg" alt="image" class="imgebyte">
+              </div>
+              <div class="item-byte item-byte6">
+                <img src="https://media.istockphoto.com/id/1212174197/photo/young-businessman-in-office.jpg?s=612x612&w=0&k=20&c=NZdepP2HyoBMXMx-V7FkV5v8bJQVyuid49FtKKPzqsE=" alt="image" class="imgebyte">
+              </div>
+              <div class="item-byte item-byte7">
+                <img src="https://media.istockphoto.com/id/1354898581/photo/shot-of-a-young-businessman-using-a-laptop-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=dDDNcvIoG-4VdO01ZlENqODBoNocT434vIFp0duuTZM=" alt="image" class="imgebyte">
+              </div>
+            </div>
+          </div>
+       
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="our-courses" id="courses">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Our Digital Partners</h2>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 Partnersal">
+                <img src="assets/cm-logo/tata-communications-limited-vector-logo.png" alt="TCS Logo" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-4 Partnersal">
+                <img src="assets/cm-logo/toppng.com-infosys-limited-vector-logo-400x400.png" alt="Infosys Logo" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-4 Partnersal">
+                <img src="assets/cm-logo/babcock---brown-limited-vector-logo.png" alt="Babcock & Brown Logo" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-4 Partnersal">
+                <img src="assets/cm-logo/hdfc-bank-limited-vector-logo.png" alt="HDFC Bank Logo" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-4 Partnersal">
+                <img src="assets/cm-logo/larsen---toubro-limited-vector-logo.png" alt="Larsen & Toubro Logo" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="our-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="AboutOurCompany">A Few Facts About Our Company</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content percentage">
+                    <div class="count-digit">94</div>
+                    <div class="count-title">Succesed Projects </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">1000 +</div>
+                    <div class="count-title">Current Employees</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content new-students">
+                    <div class="count-digit">10 + </div>
+                    <div class="count-title">Our Partners</div>
+                  </div>
+                </div> 
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">25</div>
+                    <div class="count-title">Awards</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-6 align-self-center">
+          <div class="video">
+            <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/video-photography-multimedia/play-button-green-icon.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- overview -->
+  <div class="containerAll_RT">
+    <div class="container-overview-RT">
+      <h1>Overview</h1>
+    
+      <ul>
+        <li class="post">
+          <div class="post__excerpt  card-RT">
+            <header class="card__header">
+              <h2>Brief</h2>
+              <time class="card__date" datetime="2018-08-26">Explanation</time>
+            </header>
+            <p>Ridhitek deploys its proven methodologies to help financial institutions reimagine future-ready business models...</p>
+            <div class="card__cta">
+              <a >Read more</a>  <!--href="#popup2"-->
+            </div>
+          </div>
+          <img class="post__image" src="https://d19d5sz0wkl0lu.cloudfront.net/dims4/default/d04f780/2147483647/resize/800x%3E/quality/90/?url=https%3A%2F%2Fatd-brightspot.s3.amazonaws.com%2F8a%2Fc2%2F9110a5ddef776a8d06ca99ca77cf%2Fpresenting.jpg" alt="">
+        </li>
+        
+      </ul>
+    </div>
+    </div>
+<!-- popup start -->
+<!--popup2-->
+
+<div id="popup2" class="popup-container popup-style-2">
+  <div class="popup-content">
+    <a href="#close" class="close">&times;</a>
+    <h3>RIDHITEK</h3>
+    <p>Ridhitek deploys its proven methodologies to help financial institutions reimagine future-ready business models. We put together digital strategy-roadmaps, create digital organizations, draft appropriate digital business models, launch agile product development methodologies, and build agile IT infrastructure.</p>
+    <p>Those who will fail to innovate will fail to survive. Such is the state of the financial services industry due to multiple disruptions, including the COVID-19 pandemic. One thing is certain, the days of quick fixes are over. Pandemic realities have revealed that financial institutions must align their priorities and mentalities with customer lifecycle needs to create long term business value. And that means transforming the banking core to enable operational excellence and insightful management of customer expectations and compliance.</p>
+    <p>Digital mastery is now essential for financial institutions that are grappling with deep rooted complexities aggravated by COVID-19. To achieve digital mastery, financial services firms need to provide high-touch services across all channels through efficient business operations. This requires a unique blend of technology consulting and deep domain expertise enabling businesses to deliver the right services to the right customer at the right time.</p>
+  </div>
+</div>
+<!-- popup end -->
+  <section class="contact-us" id="contact">
+    <div class="container" style="padding-bottom: 50px;">
+      <div class="row pay-card-lend">
+        <!-- column 1 -->
+        <div class="col-lg-4">
+          <div class="right-info">
+            <ul>
+              <li class="col-5">
+                <img src="https://verinite.com/static/61d90a18c3b0e9d8f2825f1196e269fe/34ca5/payment.png" alt="payments">
+              </li>
+              <li>
+                <h1>Payments</h1>
+                <span>Accelerating digital payment adoption</span>
+              </li>
+              <li>
+                <h6>Know more</h6>
+                <span>www.payement.ridhitek</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- column 2 -->
+        <div class="col-lg-4">
+            <div class="right-info">
+              <ul>
+                <li class="col-5">
+                    <img src="https://verinite.com/static/f8790e321629c578ca074612a2b74485/5db04/save-money.png" alt="payments">
+                  </li>
+                <li>
+                  <h1>Lending</h1>
+                  <span>Ushering digitalization and embedded finance</span>
+                </li>
+                <li>
+                  <h6>Know more</h6>
+                  <span>www.lending.ridhitek</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- column 3 -->
+          <div class="col-lg-4">
+            <div class="right-info">
+              <ul>
+                <li class="col-5">
+                    <img src="https://verinite.com/static/108c3ef3352fbc9316a164a67597a991/34ca5/credit-card-Filled.png" alt="payments">
+                  </li>
+                <li>
+                  <h1>Cards</h1>
+                  <span>Enabling progressive cards initiatives </span>
+                </li>
+                <li>
+                  <h6>Know more</h6>
+                  <span>www.cards.ridhitek</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+     
+    </div>
+    <app-footer></app-footer>
+ </section>
+
+</div>
+
+</div>
+
+</div>

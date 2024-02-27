@@ -1,0 +1,66 @@
+
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div  [class.dark-mode]="themeService.isDarkMode">
+<div [style.fontSize.px]="fontSize">
+ 
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#"><span class="RIDHI">RIDHI</span><span class="TEK">TEK</span></a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fa-solid fa-xmark"></i></label>
+            <li><a routerLink="/">{{'Home' | translate}}</a></li>
+            
+            <li>
+              <a  class="desktop-item">{{'Services' | translate}}</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">{{'Services' | translate}}<i class="fa-solid fa-angle-down" style="padding-left:5px;"></i></label>
+              <ul class="drop-menu">
+                <li><a routerLink="/Digitalization">Digitalization</a></li>
+                <li><a routerLink="">Application</a></li>
+               
+               
+              </ul>
+            </li>
+            <li>
+                <a href="#" class="desktop-item">{{"Domains" | translate}}</a>
+                <input type="checkbox" id="showDrop1">
+                <label for="showDrop1" class="mobile-item">{{"Domains" | translate}}<i class="fa-solid fa-angle-down" style="padding-left:5px;"></i></label>
+                <ul class="drop-menu">
+                  <li><a routerLink="/payments">Payments</a></li>
+                  <li><a routerLink="/cards">Cards</a></li>
+                 
+                </ul>
+              </li>
+            
+              <li><a routerLink="/About-us">{{ "About_us" | translate }}</a></li>
+              <li class="scroll-to-section"><a routerLink="/contact-us">{{"Contact_us" | translate}}</a></li> 
+              
+            
+          </ul>
+          <ul style="display: flex;">
+            <li class="lightdarktogmode"><input type="checkbox" class="checkbox" id="checkbox" (change)="storedarklightmode($event)">
+              <label for="checkbox" class="checkbox-label" (click)="toggleTheme()" >
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+              </label></li>
+            <li style="padding-top:0px;display: flex;">
+               <button (click)="increaseFontSize()" [disabled]="fontSizeService.isZoomInDisabled()" class="darkandlightbtn"><span>A+</span></button>
+              <button (click)="decreaseFontSize()" [disabled]="fontSizeService.isZoomOutDisabled()" class="darkandlightbtn1"><span>A-</span></button></li>
+            <li><select (change)="switchLanguage($event)" [(ngModel)]="selectedLanguage"  class="lanoption" >
+              <option value="en">{{"English" | translate}}</option>
+              <option value="tamil">{{"tamil" | translate}}</option>
+            </select></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+      
+    
+</div>
+</div>
+
