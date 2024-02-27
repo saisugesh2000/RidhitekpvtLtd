@@ -1,0 +1,13 @@
+{
+  "routes": [
+    "/",
+    "/About-us",
+    "/cards",
+    "/contact-us",
+    "/dashboard",
+    "/Digitalization",
+    "/footer",
+    "/header",
+    "/payments"
+  ]
+}
